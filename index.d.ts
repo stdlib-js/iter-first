@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,28 +16,33 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Return the first iterated value.
+* Returns the first iterated value.
 *
-* @module @stdlib/iter-first
+* ## Notes
+*
+* -   The function does **not** consume an entire iterator before returning.
+*
+* @param iterator - input iterator
+* @returns first iterated value
 *
 * @example
-* var array2iterator = require( '@stdlib/array-to-iterator' );
-* var iterFirst = require( '@stdlib/iter-first' );
+* var array2iterator = require( `@stdlib/array/to-iterator` );
 *
 * var it = array2iterator( [ 1, 0, 0, 0, 0 ] );
 *
 * var v = iterFirst( it );
 * // returns 1
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function iterFirst( iterator: Iterator ): any;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = iterFirst;
