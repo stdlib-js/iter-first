@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-first
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterFirst from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-first@esm/index.mjs';
+var iterFirst = require( '@stdlib/iter-first' );
 ```
 
 #### iterFirst( iterator )
@@ -60,7 +78,7 @@ import iterFirst from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-first@esm/inde
 Returns the first [iterated][mdn-iterator-protocol] value.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 1, 0, 0, 0, 0 ] );
 
@@ -71,7 +89,7 @@ var v = iterFirst( arr );
 If a provided [`iterator`][mdn-iterator-protocol] does not return any [iterated][mdn-iterator-protocol] values, the function returns `undefined`.
 
 ```javascript
-import iterEmpty from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-empty@esm/index.mjs';
+var iterEmpty = require( '@stdlib/iter-empty' );
 
 var v = iterFirst( iterEmpty() );
 // returns undefined
@@ -101,15 +119,10 @@ var v = iterFirst( iterEmpty() );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@esm/index.mjs';
-import iterFirst from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-first@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-iter-randu' );
+var iterMap = require( '@stdlib/iter-map' );
+var iterFirst = require( '@stdlib/iter-first' );
 
 function threshold( r ) {
     return ( r > 0.95 );
@@ -129,10 +142,6 @@ var bool = iterFirst( miter );
 // returns <boolean>
 
 console.log( bool );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -172,7 +181,7 @@ console.log( bool );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -226,8 +235,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/iter-first/tree/deno
+[deno-readme]: https://github.com/stdlib-js/iter-first/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/iter-first/tree/umd
+[umd-readme]: https://github.com/stdlib-js/iter-first/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/iter-first/tree/esm
+[esm-readme]: https://github.com/stdlib-js/iter-first/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/iter-first/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/iter-first/main/LICENSE
@@ -236,11 +248,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/head]: https://github.com/stdlib-js/iter-head/tree/esm
+[@stdlib/iter/head]: https://github.com/stdlib-js/iter-head
 
-[@stdlib/iter/last]: https://github.com/stdlib-js/iter-last/tree/esm
+[@stdlib/iter/last]: https://github.com/stdlib-js/iter-last
 
-[@stdlib/iter/nth]: https://github.com/stdlib-js/iter-nth/tree/esm
+[@stdlib/iter/nth]: https://github.com/stdlib-js/iter-nth
 
 <!-- </related-links> -->
 
