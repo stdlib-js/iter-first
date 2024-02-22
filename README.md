@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterFirst from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-first@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-first/tags). For example,
+
+```javascript
 import iterFirst from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-first@v0.2.1-esm/index.mjs';
 ```
 
@@ -109,7 +114,7 @@ var v = iterFirst( iterEmpty() );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
 import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@esm/index.mjs';
-import iterFirst from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-first@v0.2.1-esm/index.mjs';
+import iterFirst from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-first@esm/index.mjs';
 
 function threshold( r ) {
     return ( r > 0.95 );
