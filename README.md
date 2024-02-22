@@ -211,8 +211,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-first.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-first
 
-[test-image]: https://github.com/stdlib-js/iter-first/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/iter-first/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/iter-first/actions/workflows/test.yml/badge.svg?branch=v0.2.1
+[test-url]: https://github.com/stdlib-js/iter-first/actions/workflows/test.yml?query=branch:v0.2.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-first/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-first?branch=main
